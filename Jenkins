@@ -6,12 +6,12 @@ pipeline {
             steps {
                 cleanWs()
                 bat "git clone https://github.com/relzeid/devops24"
-                echo 'Hello Build'
+                
             }
         }
         stage('Build') {
             steps {
-                echo 'Hello Test'
+                echo 'Hello Build'
             }
         }
          stage('Test') {
