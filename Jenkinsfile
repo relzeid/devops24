@@ -25,11 +25,11 @@ pipeline {
             steps {
                 echo 'Hello Test'
             }
-             stage('Python') {
+           /*  stage('Python') {
             steps {
                 bat 'try.py'
             }
-        }
+        }*/
          stage('Deploy') {
             steps {
                 echo 'Hello Deploy'
