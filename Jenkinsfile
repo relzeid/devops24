@@ -1,6 +1,7 @@
 pipeline {
     agent any
-     triggers { pollSCM '* * * * *' }
+     triggers { 
+         pollSCM '* * * * *' }
     stages {
         stage('Clone') {
             steps {
@@ -11,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello Build'
-                echo ""
+                
             }
         }
          stage('Test') {
