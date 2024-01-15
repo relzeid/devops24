@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 cleanWs()
-                bat "git clone https://github.com/relzeid/devops24"    
+                bat "git clone https://github.com/relzeid/devops24.git"    
             }
         }
         stage('Build') {
