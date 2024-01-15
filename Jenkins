@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                cleanWs()
+                bat "git clone https://github.com/relzeid/devops24"
+                echo 'Hello Build'
+            }
+        }
+         stage('Test') {
+            steps {
+                echo 'Hello Test'
+            }
+        }
+         stage('Deploy') {
+            steps {
+                echo 'Hello Deploy'
+            }
+        }
+    }
+}
