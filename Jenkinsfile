@@ -12,7 +12,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello Build'
-                
+                     
+            }
+        }
+        stage('Docker') {
+            steps {
+               bat 'docker pull hello-world'
+               bat 'docker run hello-world'
             }
         }
          stage('Test') {
