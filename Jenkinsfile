@@ -25,12 +25,11 @@ pipeline {
             steps {
                 echo 'Hello Test'
             }
-           
+         }
          stage('Deploy') {
             steps {
                 echo 'Hello Deploy'
             }
         }
     }
-}
 }
